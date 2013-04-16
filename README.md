@@ -11,3 +11,4 @@ Everyone farts. And now your web pages can too.
     // Fart every 800 pixels scrolled in the document
     $(document).fartscroll();
     
+More info at [http://theonion.github.io/fartscroll.js/](http://theonion.github.io/fartscroll.js/).
