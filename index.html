@@ -44,7 +44,10 @@
     $(document).fartscroll();
 
     // Fart every 800 pixels scrolled in the document
-    $(document).fartscroll();
+    $(document).fartscroll(800);
+
+    // Fart every 100 pixels scrolled in the body (probably a bit much)
+    $("body").fartscroll(100);
 </pre>
 </li>
 </ol>
@@ -58,5 +61,12 @@
         
       </div>
     </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="javascripts/fartscroll.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(document).fartscroll(100);
+      });
+    </script>
   </body>
 </html>
