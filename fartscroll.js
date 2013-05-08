@@ -32,7 +32,6 @@ var oggs = [
     $("body").append(player);
     var audio;
     var prefix;
-    console.log(player);
     if(player.canPlayType("audio/mp3")) {
         audio = mp3s;
         prefix = mp3_prefix;
