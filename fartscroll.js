@@ -44,7 +44,7 @@ var oggs = [
     $(this).scroll(function(event) {
         var scrollOffset = Math.floor($(this).scrollTop() / trigger_distance);
         if (lastOffset !== scrollOffset) {
-            var rand = Math.floor(Math.random() * 10);
+            var rand = Math.floor(Math.random() * audio.length);
             player.src = prefix + audio[rand];
             player.play();
             lastOffset = scrollOffset;
