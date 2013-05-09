@@ -39,7 +39,6 @@
 <li>Include "fartscroll.min.js" in your page.</li>
 <li>
 <p>Initialize the fartscroll plugin on document.ready:</p>
-
 <pre>    // Fart every 400 pixels scrolled in the document
     $(document).fartscroll();
 
@@ -69,6 +68,7 @@
 </pre>
 </li>
 </ol>
+        SHAMELESS PLUG: Want to work on technology that changes the world? Or just technology that farts? We're hiring a <a href="https://www.smartrecruiters.com/TheOnion/70646318-front-end-developer">Front End Developer</a>. Drop us a line!
         </section>
 
         <footer>
@@ -84,8 +84,10 @@
     <script>
       $(document).ready(function() {
         $(document).fartscroll(400);
-        // Ensure scrolling, get in two farts
-        $('#container').css('height', window.innerHeight + 825);
+        if((document.height - 401) < window.innerHeight) {
+          // Ensure scrolling
+          $('#container').css('height', window.innerHeight + 401);
+        }
       });
     </script>
   </body>
