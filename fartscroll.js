@@ -35,8 +35,7 @@ var oggs = [
     if(player.canPlayType("audio/mp3")) {
         audio = mp3s;
         prefix = mp3_prefix;
-    }
-    else if(player.canPlayType("audio/ogg")) {
+    } else if(player.canPlayType("audio/ogg")) {
         audio = oggs;
         prefix = ogg_prefix;
     }
