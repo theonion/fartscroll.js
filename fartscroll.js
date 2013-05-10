@@ -27,9 +27,12 @@ var oggs = [
 fartscroll = function(trigger_distance) {
     trigger_distance = trigger_distance || 400;
 
-    var player_container = document.createElement("div");
-    player_container.id = "fartscroll";
-    document.getElementsByTagName('body')[0].appendChild(player_container);
+    var player_container = document.getElementById("fartscroll");
+    if (player_container === null) {
+	    player_container = document.createElement("div");
+	    player_container.id = "fartscroll";
+	    document.getElementsByTagName('body')[0].appendChild(player_container);
+    }
     
     function getplayer() {
     	var players = player_container.getElementsByTagName("audio");
