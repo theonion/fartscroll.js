@@ -1,6 +1,7 @@
 # fartscroll.js
+## Everyone farts. And now your web pages can too.
 
-Everyone farts. And now your web pages can too.
+_Now with 100% less jQuery! (Sorry, jQuery, we still love you)_
 
 1. Include "fartscroll.js" in your page.
 2. Initialize the fartscroll plugin once the DOM has loaded:
