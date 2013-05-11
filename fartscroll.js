@@ -1,3 +1,4 @@
+// fartscroll.js v0.1
 "use strict";
 
 var fartscroll = (function () {
