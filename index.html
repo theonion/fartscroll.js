@@ -31,7 +31,7 @@
 
         <section id="downloads" class="clearfix">
           <a href="https://github.com/theonion/fartscroll.js/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
-          <a href="https://github.com/theonion/fartscroll.js/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
+          <a href="javascript:%20(function%20()%20{%20%20%20%20%20var%20fs%20=%20document.createElement('script');%20%20%20%20%20fs.setAttribute('src',%20'http://code.onion.com/fartscroll.js');%20%20%20%20%20document.head.appendChild(fs);%20%20%20%20%20window.setTimeout(function(){%20%20%20%20%20%20%20%20%20fartscroll(800);%20%20%20%20%20%20%20%20%20},%20500);%20}());" title="Drag me to your browser toolbar!" id="bookmarklet" class="button"><span>Bookmarklet</span></a>
           <a href="https://github.com/theonion/fartscroll.js" id="view-on-github" class="button"><span>View on GitHub</span></a>
         </section>
 
@@ -43,10 +43,13 @@
 <p>Everyone farts. And now your web pages can too.</p>
 
 <ol>
-<li>Include "fartscroll.js" in your page.</li>
-<li>
-<p>Initialize the fartscroll plugin on document.ready:</p>
-<pre>    // Fart every 400 pixels scrolled in the window
+  <li>
+    <p>Include "fartscroll.js" in your page. You can include the latest version straight from our CDN:</p>
+    <pre>&lt;script src="http://code.onion.com/fartscroll.js"&gt;&lt;/script&gt;</pre>
+  </li>
+  <li>
+    <p>Initialize the fartscroll plugin after the page has loaded:</p>
+    <pre>    // Fart every 400 pixels scrolled in the window
     fartscroll();
 
     // Fart every 800 pixels scrolled
@@ -72,10 +75,21 @@
 
     // Alright, that's probably enough examples
     fartscroll(400);
-</pre>
-</li>
+    </pre>
+  </li>
 </ol>
-        SHAMELESS PLUG: Want to work on technology that changes the world? Or just technology that farts? We're hiring a <a href="https://www.smartrecruiters.com/TheOnion/70646318-front-end-developer">Front End Developer</a>. Drop us a line!
+<h2>Other ways to experience fartscroll.js:</h2>
+<ul>
+  <li>As a <a href="javascript:%20(function%20()%20{%20%20%20%20%20var%20fs%20=%20document.createElement('script');%20%20%20%20%20fs.setAttribute('src',%20'http://code.onion.com/fartscroll.js');%20%20%20%20%20document.head.appendChild(fs);%20%20%20%20%20window.setTimeout(function(){%20%20%20%20%20%20%20%20%20fartscroll(800);%20%20%20%20%20%20%20%20%20},%20500);%20}());" title="Drag me to your browser toolbar!">bookmarklet</a>.
+  </li>
+  <li>As a <a href="http://labs.pgib.me/fartscroll.html">Safari extension</a>.</li>
+  <li>As a <a href="https://chrome.google.com/webstore/detail/artscroll/aleccjpdgapbpljpcepdlgjegkfkofhj">Chrome Extension</a>.</li>
+  <li>As a <a href="http://wordpress.org/extend/plugins/fartscroll/">Wordpress Plugin</a>.</li>
+  <li>As a <a href="http://drupal.org/project/fartscroll">Drupal Plugin</a>.</li>
+</ul>
+<p>
+SHAMELESS PLUG: Want to work on technology that changes the world? Or just technology that farts? We're hiring a <a href="https://www.smartrecruiters.com/TheOnion/70646318-front-end-developer">Front End Developer</a>. Drop us a line!
+</p>
         </section>
 
         <footer>
@@ -87,7 +101,7 @@
       </div>
     </div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="javascripts/fartscroll.js"></script>
+    <script src="http://code.onion.com/fartscroll.js"></script>
     <script>
       fartscroll(400);
       $(document).ready(function() {
