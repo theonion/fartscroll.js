@@ -37,13 +37,15 @@ var fartscroll = (function () {
     trigger_distance = trigger_distance || 400;
     var lastOffset;
 
-    window.onscroll = function() {
+    var fartHandler = function() {
       var scrollOffset = Math.floor(window.scrollY / trigger_distance);
       if (lastOffset !== scrollOffset) {
         playAudio();
         lastOffset = scrollOffset;
       }
     };
+
+	window.addEventListener('scroll', fartHandler, false)
   };
 
   function playAudio(position){
