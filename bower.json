@@ -1,0 +1,26 @@
+{
+  "name": "fartscroll.js",
+  "main": "fartscroll.js",
+  "version": "0.1.0",
+  "homepage": "http://theonion.github.io/fartscroll.js/",
+  "authors": [
+    "Chris Sinchok <csinchok@theonion.com>"
+  ],
+  "description": "You want fart noises as you scroll? We've got you covered.",
+  "keywords": [
+    "fart",
+    "farts",
+    "scroll",
+    "poop",
+    "butts",
+    "flatus"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
