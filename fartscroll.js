@@ -48,8 +48,9 @@ var fartscroll = (function () {
 
     var timer;
     function resizeFart() {
-      if(timer)
+      if (timer) {
         clearTimeout(timer);
+      }
       timer = setTimeout(function(){ playAudio(); }, 200);
     };
 
